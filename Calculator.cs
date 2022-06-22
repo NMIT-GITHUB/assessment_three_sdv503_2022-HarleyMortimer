@@ -1,12 +1,3 @@
-﻿//using System;
-//
-//public class Calculator
-//{
-//	public Calculator()
-//	{
-//
-//	}
-//}
 
 namespace Calculator
 {
