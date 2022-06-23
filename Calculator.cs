@@ -10,7 +10,7 @@ namespace Calculator
             double num1 = Convert.ToDouble(Console.ReadLine()); //Converts the number to a double ("accepts decimals")
             Console.WriteLine("Enter another number: "); //Number two entry
             double num2 = Convert.ToDouble(Console.ReadLine()); //Converts number 2 to a double
-            Console.WriteLine("Choose an operator from the following list:"); //Choosing an operator
+            Console.WriteLine("Choose an operator from the following list:"); //Choosing an operator ("Operator menu")
             Console.WriteLine("\ta - Add"); //Entering the string "a" will make it Add the two numbers and so on 
             Console.WriteLine("\ts - Subtract");
             Console.WriteLine("\tm - Multiply");
