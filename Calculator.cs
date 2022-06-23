@@ -1,4 +1,5 @@
-
+//https://docs.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-console?view=vs-2022  
+//https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.colors?view=windowsdesktop-6.0
 namespace Calculator
 {
     class Calculator
@@ -6,9 +7,9 @@ namespace Calculator
         static void Main(string[] args)
         {
             Console.WriteLine("Enter a number here: "); //Enter the first number
-            double num1 = Convert.ToDouble(Console.ReadLine()); //Converts the number to a double (meaning it accepts decimals)
+            double num1 = Convert.ToDouble(Console.ReadLine()); //Converts the number to a double ("accepts decimals")
             Console.WriteLine("Enter another number: "); //Number two entry
-            double num2 = Convert.ToDouble(Console.ReadLine()); //Converting number 2 to a double
+            double num2 = Convert.ToDouble(Console.ReadLine()); //Converts number 2 to a double
             Console.WriteLine("Choose an operator from the following list:"); //Choosing an operator
             Console.WriteLine("\ta - Add"); //Entering the string "a" will make it Add the two numbers and so on 
             Console.WriteLine("\ts - Subtract");
@@ -23,10 +24,10 @@ namespace Calculator
             {
                 case "a":
                     result = num1 + num2; //E.G when "a" is entered it will perform this equation
-                    Console.ForegroundColor = ConsoleColor.Black;
-                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.ForegroundColor = ConsoleColor.Black; //color of console writing 
+                    Console.BackgroundColor = ConsoleColor.Red; // color of console background
                     Console.Clear(); //Clears the console and changes the colors of the console when answer is displayed 
-                    break;
+                    break; //finsihes case
                 case "s":
                     result = num1 - num2;
                     Console.ForegroundColor = ConsoleColor.Yellow;
@@ -36,7 +37,7 @@ namespace Calculator
                 case "m":
                     result = num1 * num2;
                     Console.ForegroundColor = ConsoleColor.Black;
-                    Console.BackgroundColor = ConsoleColor.Yellow;
+                    Console.BackgroundColor = ConsoleColor.MintCream;
                     Console.Clear();
                     break;
                 case "d":
@@ -47,21 +48,21 @@ namespace Calculator
                     break;
                 case "p":
                     result = Math.Pow(num1, num2);
-                    Console.ForegroundColor = ConsoleColor.Green;
-                    Console.BackgroundColor = ConsoleColor.DarkGray;
+                    Console.ForegroundColor = ConsoleColor.Teal;
+                    Console.BackgroundColor = ConsoleColor.AliceBlue;
                     Console.Clear();
                     break;
                 case "r":
                     result = num1 % num2;
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.BackgroundColor = ConsoleColor.Black;
+                    Console.BackgroundColor = ConsoleColor.MidnightBlue;
                     Console.Clear();
                     break;
                 default:
                     Console.WriteLine("Invalid operator input"); //If the input is any different from the inputs provided it will show this error
                     break;
             }
-            Console.WriteLine("Your result is: "); //It now prints the answer
+            Console.WriteLine("Your result is: "); //prints the answer
             Console.WriteLine(result);
         }
 
