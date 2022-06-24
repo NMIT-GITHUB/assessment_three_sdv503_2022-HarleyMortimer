@@ -1,5 +1,5 @@
 //https://docs.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-console?view=vs-2022  
-//https://docs.microsoft.com/en-us/dotnet/api/system.windows.media.colors?view=windowsdesktop-6.0
+//https://www.c-sharpcorner.com/article/change-console-foreground-and-background-color-in-c-sharp/
 namespace Calculator
 {
     class Calculator
@@ -37,7 +37,7 @@ namespace Calculator
                 case "m":
                     result = num1 * num2;
                     Console.ForegroundColor = ConsoleColor.Black;
-                    Console.BackgroundColor = ConsoleColor.MintCream;
+                    Console.BackgroundColor = ConsoleColor.DarkCyan;
                     Console.Clear();
                     break;
                 case "d":
@@ -48,14 +48,14 @@ namespace Calculator
                     break;
                 case "p":
                     result = Math.Pow(num1, num2);
-                    Console.ForegroundColor = ConsoleColor.Teal;
-                    Console.BackgroundColor = ConsoleColor.AliceBlue;
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.BackgroundColor = ConsoleColor.Black;
                     Console.Clear();
                     break;
                 case "r":
                     result = num1 % num2;
                     Console.ForegroundColor = ConsoleColor.Cyan;
-                    Console.BackgroundColor = ConsoleColor.MidnightBlue;
+                    Console.BackgroundColor = ConsoleColor.Black;
                     Console.Clear();
                     break;
                 default:
@@ -65,4 +65,7 @@ namespace Calculator
             Console.WriteLine("Your result is: "); //prints the answer
             Console.WriteLine(result);
         }
+    }
+}
+
 
